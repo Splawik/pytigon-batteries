@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="pytigon-bateries",
+    name="pytigon-batteries",
     version="0.95",
     description="Pytigon library",
     author="Sławomir Chołaj",
