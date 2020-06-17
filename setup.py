@@ -21,7 +21,7 @@ with open("requirements.txt") as f:
 
 setup(
     name="pytigon-batteries",
-    version="0.100",
+    version="0.104",
     description="Pytigon library",
     author="Sławomir Chołaj",
     author_email="slawomir.cholaj@gmail.com",
@@ -46,4 +46,3 @@ setup(
     ],
     python_requires=">=3",
 )
-
