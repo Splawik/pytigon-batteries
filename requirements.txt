@@ -1,4 +1,6 @@
 pytigon
+daphne
+channels
 cffi
 numpy
 numba
@@ -6,3 +8,6 @@ wasmer
 fs.sshfs
 Twisted[tls,http2]
 hypercorn
+django-pwa
+django-webpush
+django-widget-tweaks
