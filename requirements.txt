@@ -3,3 +3,4 @@ cffi
 numpy
 numba
 wasmer
+fs.sshfs
