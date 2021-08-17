@@ -3,7 +3,6 @@ daphne
 channels
 cffi
 numpy
-numba
 wasmer
 fs.sshfs
 Twisted[tls,http2]
