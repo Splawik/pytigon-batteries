@@ -1,4 +1,5 @@
 pytigon
+cython
 daphne
 channels
 cffi
@@ -7,6 +8,9 @@ wasmer
 fs.sshfs
 Twisted[tls,http2]
 hypercorn
+plotly
 django-pwa
 django-webpush
+django-q-email
 xonsh
+netifaces
