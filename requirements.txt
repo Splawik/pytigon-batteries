@@ -1,11 +1,15 @@
 pytigon
 cython
+html5lib
 daphne
 channels
 cffi
 numpy
 wasmer
 fs.sshfs
+easy_thumbnails
+croniter
+ldap3
 Twisted[tls,http2]
 hypercorn
 plotly
@@ -20,4 +24,9 @@ django-allauth
 django-q-email
 django-mptt
 django-filer
+django_redis
 django-log-viewer
+django-graphql-jwt
+django_python3_ldap
+django-sql-explorer
+graphene-django
