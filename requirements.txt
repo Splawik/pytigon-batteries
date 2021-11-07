@@ -30,3 +30,4 @@ django-graphql-jwt
 django_python3_ldap
 django-sql-explorer
 graphene-django
+dulwich
