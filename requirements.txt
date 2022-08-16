@@ -17,7 +17,6 @@ xonsh
 netifaces
 django-polymorphic
 django-filter
-django-pwa
 django-webpush
 django_compressor
 django-q-email
@@ -33,3 +32,4 @@ graphene-django
 gql
 psutil
 llvmlite
+git+https://github.com/silviolleite/django-pwa
