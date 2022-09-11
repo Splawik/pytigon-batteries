@@ -28,8 +28,9 @@ django_python3_ldap
 django-sql-explorer
 django-allauth
 django-oauth-toolkit
-graphene-django
+#graphene-django
 gql
 psutil
 llvmlite
 git+https://github.com/silviolleite/django-pwa
+https://github.com/graphql-python/graphene-django.git
