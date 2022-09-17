@@ -29,8 +29,11 @@ django-sql-explorer
 django-allauth
 django-oauth-toolkit
 #graphene-django
-gql
 psutil
+numba
 llvmlite
+django-guardian 
+djangorestframework
 git+https://github.com/silviolleite/django-pwa
 https://github.com/graphql-python/graphene-django.git
+gql
