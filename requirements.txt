@@ -33,6 +33,6 @@ numba
 llvmlite
 django-guardian 
 djangorestframework
-django_pwa @ git+https://github.com/silviolleite/django-pwa.git
+django_pwa @ https://github.com/silviolleite/django-pwa.git
 graphene_django @ https://github.com/graphql-python/graphene-django.git
 gql
