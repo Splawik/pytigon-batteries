@@ -15,13 +15,11 @@ extra_files = ["../requirements.txt"]
 
 with open("requirements.txt") as f:
     tmp = f.read().strip().split("\n")
-    install_requires = [pos for pos in tmp if "://" not in pos]
-    dependency_links = [pos for pos in tmp if "://" in pos]
-
+    install_requires = [pos for pos in tmp]
 
 setup(
     name="pytigon-batteries",
-    version="0.202",
+    version="0.203",
     description="Pytigon library",
     author="Sławomir Chołaj",
     author_email="slawomir.cholaj@gmail.com",
@@ -29,7 +27,6 @@ setup(
     packages=find_packages(),
     package_data={"": extra_files},
     install_requires=install_requires,
-    dependency_links=dependency_links,
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
