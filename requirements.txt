@@ -34,5 +34,5 @@ llvmlite
 django-guardian 
 djangorestframework
 django_pwa @ git+https://github.com/silviolleite/django-pwa.git
-graphene_django @ https://github.com/graphql-python/graphene-django.git"
+graphene_django @ https://github.com/graphql-python/graphene-django.git
 gql
