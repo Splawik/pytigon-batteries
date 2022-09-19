@@ -34,5 +34,7 @@ llvmlite
 django-guardian 
 djangorestframework
 django-pwa
+graphene
 graphene_django
+graphql_jwt
 gql
