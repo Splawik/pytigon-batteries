@@ -36,5 +36,5 @@ djangorestframework
 django-pwa
 graphene
 graphene_django
-graphql_jwt
+django-graphql-jwt
 gql
