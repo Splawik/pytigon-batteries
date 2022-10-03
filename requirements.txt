@@ -32,8 +32,8 @@ llvmlite
 numba
 ldap3
 gql
-daphne
-hypercorn
+waitress
+uvicorn[standard]
 dulwich
 cffi
 wasmer
