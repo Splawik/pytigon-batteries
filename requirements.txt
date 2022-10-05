@@ -39,3 +39,4 @@ cffi
 wasmer
 wasmer_compiler_cranelift
 xonsh
+httpie
