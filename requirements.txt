@@ -3,6 +3,8 @@ html5lib
 Twisted[tls,http2]
 channels
 numpy
+svglib
+reportlab
 easy_thumbnails
 croniter
 plotly
