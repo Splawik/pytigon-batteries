@@ -2,6 +2,7 @@ pytigon
 html5lib
 Twisted[tls,http2]
 channels
+daphne
 numpy
 svglib
 reportlab
