@@ -11,7 +11,6 @@ croniter
 plotly
 django-polymorphic
 django-filter
-django-webpush
 django_compressor
 django-q-email
 django-mptt
@@ -24,7 +23,7 @@ django-allauth
 django-oauth-toolkit
 django-guardian 
 djangorestframework
-django-pwa
+django-pwa-webpush
 graphene
 graphene_django
 django-graphql-jwt
