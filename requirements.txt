@@ -28,6 +28,7 @@ graphene
 graphene_django
 django-graphql-jwt
 djangorestframework
+drf-yasg
 fs.sshfs
 psutil
 netifaces
