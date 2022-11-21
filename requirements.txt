@@ -31,7 +31,7 @@ djangorestframework
 drf-yasg
 fs.sshfs
 psutil
-netifaces
+netifaces2
 pygments
 PyYAML
 uritemplate
