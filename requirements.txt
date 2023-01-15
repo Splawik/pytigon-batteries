@@ -6,6 +6,7 @@ daphne
 numpy
 svglib
 reportlab
+pypdf
 easy_thumbnails
 croniter
 plotly
