@@ -46,6 +46,7 @@ dulwich
 cffi
 wasmer
 wasmer_compiler_cranelift
+ziglang
 xonsh
 httpie
 autobahn
