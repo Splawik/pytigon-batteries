@@ -5,6 +5,7 @@ channels
 daphne
 numpy
 svglib
+graphviz
 reportlab
 pypdf
 easy_thumbnails
