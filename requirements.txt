@@ -4,6 +4,8 @@ Twisted[tls,http2]
 channels
 daphne
 numpy
+pandas
+seaborn
 svglib
 graphviz
 reportlab
