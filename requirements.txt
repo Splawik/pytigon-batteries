@@ -6,6 +6,7 @@ daphne
 numpy
 pandas
 seaborn
+notebook
 svglib
 graphviz
 reportlab
@@ -32,6 +33,7 @@ graphene
 graphene_django
 django-graphql-jwt
 djangorestframework
+django-extensions
 drf-yasg
 fs.sshfs
 psutil
