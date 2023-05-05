@@ -3,6 +3,7 @@ html5lib
 Twisted[tls,http2]
 redis
 channels
+channels-redis
 daphne
 numpy
 pandas
