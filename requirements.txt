@@ -1,6 +1,7 @@
 pytigon
 html5lib
 Twisted[tls,http2]
+redis
 channels
 daphne
 numpy
