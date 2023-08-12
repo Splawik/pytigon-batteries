@@ -48,8 +48,7 @@ waitress
 uvicorn[standard]
 dulwich
 cffi
-wasmer
-wasmer_compiler_cranelift
+wasmtime
 ziglang
 xonsh
 httpie
