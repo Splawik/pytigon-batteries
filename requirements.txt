@@ -17,7 +17,6 @@ plotly
 django-polymorphic
 django-filter
 django_compressor
-django-q-email
 django-mptt
 django-filer
 django_redis
