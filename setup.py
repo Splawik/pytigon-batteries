@@ -10,16 +10,38 @@ def package_files(directory, ext=None):
     return paths
 
 
-extra_files = ["../requirements.txt"]
+extra_files = [
+    "../requirements.txt",
+    "../requirements_basic.txt",
+    "../requirements_server.txt",
+    "../requirements_data.txt",
+    "../requirements_interface.txt",
+]
 
+with open("requirements_basic.txt") as f:
+    tmp_basic = f.read().strip().split("\n")
+with open("requirements_server.txt") as f:
+    tmp_server = f.read().strip().split("\n")
+with open("requirements_data.txt") as f:
+    tmp_data = f.read().strip().split("\n")
+with open("requirements_interface.txt") as f:
+    tmp_interface = f.read().strip().split("\n")
 
-with open("requirements.txt") as f:
-    tmp = f.read().strip().split("\n")
-    install_requires = [pos for pos in tmp]
+install_requires = [pos for pos in tmp_basic if pos]
+
+extras_require = {
+    "server": [pos for pos in tmp_server if pos],
+    "data": [pos for pos in tmp_data if pos],
+    "interface": [pos for pos in tmp_interface if pos],
+}
+
+extras_require["all"] = (
+    extras_require["server"] + extras_require["data"] + extras_require["interface"]
+)
 
 setup(
     name="pytigon-batteries",
-    version="0.240228",
+    version="0.240302",
     description="Pytigon library",
     author="Sławomir Chołaj",
     author_email="slawomir.cholaj@gmail.com",
@@ -27,6 +49,7 @@ setup(
     packages=find_packages(),
     package_data={"": extra_files},
     install_requires=install_requires,
+    extras_require=extras_require,
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",

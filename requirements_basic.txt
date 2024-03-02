@@ -1,0 +1,14 @@
+pytigon
+html5lib
+reportlab
+svglib
+graphviz
+pypdf
+fs.sshfs
+psutil
+netifaces2
+pygments
+PyYAML
+uritemplate
+ldap3
+pyopenssl
