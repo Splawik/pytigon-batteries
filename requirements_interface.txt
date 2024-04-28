@@ -4,3 +4,4 @@ wasmtime
 ziglang
 xonsh
 httpie
+pyzmq
