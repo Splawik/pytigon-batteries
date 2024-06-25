@@ -16,6 +16,7 @@ numba
 gql
 waitress
 uvicorn[standard]
+python3-openid
 django-filter
 django_compressor
 django-filer
