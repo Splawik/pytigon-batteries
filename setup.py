@@ -41,7 +41,7 @@ extras_require["all"] = (
 
 setup(
     name="pytigon-batteries",
-    version="0.240722",
+    version="0.241009",
     description="Pytigon library",
     author="Sławomir Chołaj",
     author_email="slawomir.cholaj@gmail.com",
