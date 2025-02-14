@@ -10,43 +10,44 @@ def package_files(directory, ext=None):
     return paths
 
 
-extra_files = [
-    "../requirements.txt",
-    "../requirements_basic.txt",
-    "../requirements_server.txt",
-    "../requirements_data.txt",
-    "../requirements_interface.txt",
-]
+extra_files = ["../requirements.txt"]
 
-try:
-    with open("requirements_basic.txt") as f:
-        tmp_basic = f.read().strip().split("\n")
-    with open("requirements_server.txt") as f:
-        tmp_server = f.read().strip().split("\n")
-    with open("requirements_data.txt") as f:
-        tmp_data = f.read().strip().split("\n")
-    with open("requirements_interface.txt") as f:
-        tmp_interface = f.read().strip().split("\n")
+tmp_basic = []
+tmp_server = []
+tmp_data = []
+tmp_interface = []
 
-    install_requires = [pos for pos in tmp_basic if pos]
+status = "basic"
+with open("requirements.txt") as f:
+    tmp = f.read().strip().split("\n")
+    for pos in tmp:
+        if "#" in pos:
+            status = pos.split("#")[1].strip()
+        if pos:
+            if status == "basic":
+                tmp_basic.append(pos)
+            if status == "server":
+                tmp_server.append(pos)
+            if status == "data":
+                tmp_data.append(pos)
+            if status == "interface":
+                tmp_interface.append(pos)
 
-    extras_require = {
-        "server": [pos for pos in tmp_server if pos],
-        "data": [pos for pos in tmp_data if pos],
-        "interface": [pos for pos in tmp_interface if pos],
-    }
+install_requires = [pos for pos in tmp_basic if pos]
 
-    extras_require["all"] = (
-        extras_require["server"] + extras_require["data"] + extras_require["interface"]
-    )
-except:
-    install_requires = []
-    extras_require = {}
+extras_require = {
+    "server": [pos for pos in tmp_server if pos],
+    "data": [pos for pos in tmp_data if pos],
+    "interface": [pos for pos in tmp_interface if pos],
+}
 
+extras_require["all"] = (
+    extras_require["server"] + extras_require["data"] + extras_require["interface"]
+)
 
 setup(
     name="pytigon-batteries",
-    version="0.250214",
+    version="0.250215",
     description="Pytigon library",
     author="Sławomir Chołaj",
     author_email="slawomir.cholaj@gmail.com",
