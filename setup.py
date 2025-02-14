@@ -18,30 +18,35 @@ extra_files = [
     "../requirements_interface.txt",
 ]
 
-with open("requirements_basic.txt") as f:
-    tmp_basic = f.read().strip().split("\n")
-with open("requirements_server.txt") as f:
-    tmp_server = f.read().strip().split("\n")
-with open("requirements_data.txt") as f:
-    tmp_data = f.read().strip().split("\n")
-with open("requirements_interface.txt") as f:
-    tmp_interface = f.read().strip().split("\n")
+try:
+    with open("requirements_basic.txt") as f:
+        tmp_basic = f.read().strip().split("\n")
+    with open("requirements_server.txt") as f:
+        tmp_server = f.read().strip().split("\n")
+    with open("requirements_data.txt") as f:
+        tmp_data = f.read().strip().split("\n")
+    with open("requirements_interface.txt") as f:
+        tmp_interface = f.read().strip().split("\n")
 
-install_requires = [pos for pos in tmp_basic if pos]
+    install_requires = [pos for pos in tmp_basic if pos]
 
-extras_require = {
-    "server": [pos for pos in tmp_server if pos],
-    "data": [pos for pos in tmp_data if pos],
-    "interface": [pos for pos in tmp_interface if pos],
-}
+    extras_require = {
+        "server": [pos for pos in tmp_server if pos],
+        "data": [pos for pos in tmp_data if pos],
+        "interface": [pos for pos in tmp_interface if pos],
+    }
 
-extras_require["all"] = (
-    extras_require["server"] + extras_require["data"] + extras_require["interface"]
-)
+    extras_require["all"] = (
+        extras_require["server"] + extras_require["data"] + extras_require["interface"]
+    )
+except:
+    install_requires = []
+    extras_require = {}
+
 
 setup(
     name="pytigon-batteries",
-    version="0.250110",
+    version="0.250214",
     description="Pytigon library",
     author="Sławomir Chołaj",
     author_email="slawomir.cholaj@gmail.com",
