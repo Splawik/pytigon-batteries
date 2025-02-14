@@ -1,7 +1,0 @@
-dulwich
-cffi
-wasmtime
-ziglang
-xonsh
-httpie
-pyzmq
