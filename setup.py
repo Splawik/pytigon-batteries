@@ -1,16 +1,4 @@
-from setuptools import setup, find_packages
-
-
-def package_files(directory, ext=None):
-    paths = []
-    for path, directories, filenames in os.walk(directory):
-        for filename in filenames:
-            if not ext or (ext and filename.endswith(ext)):
-                paths.append(os.path.join("..", path, filename))
-    return paths
-
-
-extra_files = ["../requirements.txt"]
+from setuptools import setup
 
 tmp_basic = []
 tmp_server = []
@@ -52,8 +40,7 @@ setup(
     author="Sławomir Chołaj",
     author_email="slawomir.cholaj@gmail.com",
     license="LGPLv3",
-    packages=find_packages(),
-    package_data={"": extra_files},
+    include_package_data=True,
     install_requires=install_requires,
     extras_require=extras_require,
     classifiers=[
