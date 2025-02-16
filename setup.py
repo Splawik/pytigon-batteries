@@ -4,6 +4,7 @@ tmp_basic = []
 tmp_server = []
 tmp_data = []
 tmp_interface = []
+tmp_extra = []
 
 status = "basic"
 with open("requirements.txt") as f:
@@ -14,12 +15,14 @@ with open("requirements.txt") as f:
         if pos:
             if status == "basic":
                 tmp_basic.append(pos)
-            if status == "server":
+            elif status == "server":
                 tmp_server.append(pos)
-            if status == "data":
+            elif status == "data":
                 tmp_data.append(pos)
-            if status == "interface":
+            elif status == "interface":
                 tmp_interface.append(pos)
+            elif status == "extra":
+                tmp_extra.append(pos)
 
 install_requires = [pos for pos in tmp_basic if pos]
 
@@ -27,6 +30,7 @@ extras_require = {
     "server": [pos for pos in tmp_server if pos],
     "data": [pos for pos in tmp_data if pos],
     "interface": [pos for pos in tmp_interface if pos],
+    "extra": [pos for pos in tmp_extra if pos],
 }
 
 extras_require["all"] = (
@@ -35,7 +39,7 @@ extras_require["all"] = (
 
 setup(
     name="pytigon-batteries",
-    version="0.250215",
+    version="0.250216",
     description="Pytigon library",
     author="Sławomir Chołaj",
     author_email="slawomir.cholaj@gmail.com",

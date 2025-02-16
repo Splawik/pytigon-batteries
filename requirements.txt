@@ -49,7 +49,6 @@ django-mptt
 django-guardian 
 djangorestframework
 django-pwa-webpush
-pypdfium2
 
 # data
 numpy
@@ -66,3 +65,7 @@ ziglang
 xonsh
 httpie
 pyzmq
+
+# extra
+pypdfium2
+playwright
