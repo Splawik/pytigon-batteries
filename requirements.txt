@@ -49,6 +49,7 @@ django-mptt
 django-guardian 
 djangorestframework
 django-pwa-webpush
+pypdfium2
 
 # data
 numpy
