@@ -56,6 +56,7 @@ pandas
 pyarrow
 duckdb
 plotly
+seaborn[stats]
 
 # interface
 dulwich
