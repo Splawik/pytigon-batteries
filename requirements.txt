@@ -49,6 +49,10 @@ django-mptt
 django-guardian 
 djangorestframework
 django-pwa-webpush
+django-q2
+django-extensions
+django-mailer
+
 
 # data
 numpy
