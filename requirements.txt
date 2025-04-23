@@ -1,5 +1,8 @@
 # basic
 pytigon
+Pillow
+lxml
+fpdf2
 html5lib
 reportlab
 svglib
