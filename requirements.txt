@@ -63,6 +63,7 @@ pyarrow
 duckdb
 plotly
 seaborn[stats]
+pygal
 
 # interface
 dulwich
