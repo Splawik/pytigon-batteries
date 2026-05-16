@@ -25,7 +25,6 @@ easy_thumbnails
 croniter
 Twisted[tls,http2]
 autobahn
-graphene
 graphene_django
 django-graphql-jwt
 djangorestframework
@@ -49,7 +48,6 @@ django-oauth-toolkit
 django-polymorphic
 django-mptt
 django-guardian 
-djangorestframework
 django-pwa-webpush
 django-q2
 django-extensions

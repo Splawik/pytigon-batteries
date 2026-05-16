@@ -44,7 +44,7 @@ setup(
     author="Sławomir Chołaj",
     author_email="slawomir.cholaj@gmail.com",
     license="LGPLv3",
-    include_package_data=True,
+
     install_requires=install_requires,
     extras_require=extras_require,
     classifiers=[
@@ -66,5 +66,5 @@ setup(
         "Topic :: Software Development :: Libraries :: Application Frameworks",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
-    python_requires=">=3",
+    python_requires=">=3.8",
 )
