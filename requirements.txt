@@ -1,4 +1,5 @@
 # basic
+arrow
 pytigon
 Pillow
 fpdf2
