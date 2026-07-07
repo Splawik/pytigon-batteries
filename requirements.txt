@@ -1,6 +1,7 @@
 # basic
 arrow
 pytigon
+pytigon-standard-prj
 Pillow
 fpdf2
 html5lib
