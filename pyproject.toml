@@ -7,7 +7,7 @@ name = "pytigon-batteries"
 version = "0.260719"
 description = "Pytigon library"
 readme = "README.md"
-license = { text = "LGPLv3" }
+license = { text = "LGPLv2.1" }
 authors = [
     { name = "Sławomir Chołaj", email = "slawomir.cholaj@gmail.com" },
 ]
