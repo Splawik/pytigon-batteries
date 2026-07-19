@@ -1,3 +1,150 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytigon-batteries"
+version = "0.260719"
+description = "Pytigon library"
+readme = "README.md"
+license = { text = "LGPLv3" }
+authors = [
+    { name = "Sławomir Chołaj", email = "slawomir.cholaj@gmail.com" },
+]
+requires-python = ">=3.12"
+dependencies = [
+    "arrow",
+    "pytigon",
+    "pytigon-standard-prj",
+    "Pillow",
+    "fpdf2",
+    "html5lib",
+    "reportlab",
+    "svglib",
+    "graphviz",
+    "pypdf",
+    "fs.sshfs",
+    "psutil",
+    "netifaces2",
+    "pygments",
+    "PyYAML",
+    "uritemplate",
+    "ldap3",
+    "pyopenssl",
+]
+
+[project.optional-dependencies]
+server = [
+    "redis",
+    "channels",
+    "channels-redis",
+    "daphne",
+    "easy_thumbnails",
+    "croniter",
+    "Twisted[tls,http2]",
+    "autobahn",
+    "graphene_django",
+    "django-graphql-jwt",
+    "djangorestframework",
+    "drf-yasg",
+    "openai",
+    "llvmlite",
+    "numba",
+    "gql",
+    "waitress",
+    "uvicorn[standard]",
+    "python3-openid",
+    "django-filter",
+    "django_compressor",
+    "django-filer",
+    "django_redis",
+    "django-log-viewer",
+    "django_python3_ldap",
+    "django-sql-explorer",
+    "django-allauth",
+    "django-oauth-toolkit",
+    "django-polymorphic",
+    "django-mptt",
+    "django-guardian",
+    "django-pwa-webpush",
+    "django-q2",
+    "django-extensions",
+    "django-mailer",
+]
+data = [
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "duckdb",
+    "plotly",
+    "seaborn[stats]",
+    "pygal",
+]
+interface = [
+    "dulwich",
+    "cffi",
+    "wasmtime",
+    "ziglang",
+    "xonsh",
+    "httpie",
+    "pyzmq",
+]
+extra = [
+    "pypdfium2",
+    "playwright",
+    "ruff",
+]
+all = [
+    "redis",
+    "channels",
+    "channels-redis",
+    "daphne",
+    "easy_thumbnails",
+    "croniter",
+    "Twisted[tls,http2]",
+    "autobahn",
+    "graphene_django",
+    "django-graphql-jwt",
+    "djangorestframework",
+    "drf-yasg",
+    "openai",
+    "llvmlite",
+    "numba",
+    "gql",
+    "waitress",
+    "uvicorn[standard]",
+    "python3-openid",
+    "django-filter",
+    "django_compressor",
+    "django-filer",
+    "django_redis",
+    "django-log-viewer",
+    "django_python3_ldap",
+    "django-sql-explorer",
+    "django-allauth",
+    "django-oauth-toolkit",
+    "django-polymorphic",
+    "django-mptt",
+    "django-guardian",
+    "django-pwa-webpush",
+    "django-q2",
+    "django-extensions",
+    "django-mailer",
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "duckdb",
+    "plotly",
+    "seaborn[stats]",
+    "pygal",
+    "dulwich",
+    "cffi",
+    "wasmtime",
+    "ziglang",
+    "xonsh",
+    "httpie",
+    "pyzmq",
+]
+
+[tool.setuptools]
+zip-safe = false
