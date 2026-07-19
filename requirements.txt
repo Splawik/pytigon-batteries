@@ -77,3 +77,4 @@ pyzmq
 # extra
 pypdfium2
 playwright
+ruff
