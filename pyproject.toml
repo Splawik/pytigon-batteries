@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pytigon-batteries"
-version = "0.260719"
+version = "0.260721"
 description = "Pytigon library"
 readme = "README.md"
 license = { text = "LGPLv2.1" }
@@ -48,6 +48,7 @@ server = [
     "djangorestframework",
     "drf-yasg",
     "openai",
+    "mcp",
     "llvmlite",
     "numba",
     "gql",
