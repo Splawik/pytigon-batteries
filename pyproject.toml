@@ -23,7 +23,6 @@ dependencies = [
     "svglib",
     "graphviz",
     "pypdf",
-    "fs.sshfs",
     "psutil",
     "netifaces2",
     "pygments",
