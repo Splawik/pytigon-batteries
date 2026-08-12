@@ -79,6 +79,7 @@ data = [
     "plotly",
     "seaborn[stats]",
     "pygal",
+    "formulas",
 ]
 interface = [
     "dulwich",
@@ -106,7 +107,7 @@ all = [
     "graphene_django",
     "django-graphql-jwt",
     "djangorestframework",
-    "drf-yasg",
+    "drf-spectacular",
     "openai",
     "fastmcp",
     "llvmlite",
@@ -145,6 +146,10 @@ all = [
     "xonsh",
     "httpie",
     "pyzmq",
+    "formulas",
+    "pypdfium2",
+    "playwright",
+    "ruff",
 ]
 
 [tool.setuptools]
