@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pytigon-batteries"
-version = "0.260813"
+version = "0.260822"
 description = "Pytigon library"
 readme = "README.md"
 license = { text = "LGPLv2.1" }
@@ -51,8 +51,7 @@ server = [
     "llvmlite",
     "numba",
     "gql",
-    "waitress",
-    "uvicorn[standard]",
+    "granian",
     "python3-openid",
     "django-filter",
     "django_compressor",
@@ -113,8 +112,7 @@ all = [
     "llvmlite",
     "numba",
     "gql",
-    "waitress",
-    "uvicorn[standard]",
+    "granian",
     "python3-openid",
     "django-filter",
     "django_compressor",
