@@ -21,6 +21,7 @@ dependencies = [
     "html5lib",
     "reportlab",
     "svglib",
+    "rlPyCairo",
     "graphviz",
     "pypdf",
     "psutil",
