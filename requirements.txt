@@ -1,9 +1,0 @@
-# Zależności są zarządzane w pyproject.toml (sekcja [project] / [project.optional-dependencies]).
-# Ten plik służy do szybkiej instalacji z konsoli:
-#
-#   pip install -e .            # podstawowe (basic)
-#   pip install -e ".[server]"  # + extras server
-#   pip install -e ".[all]"     # wszystkie extras
-#
-# Aby zainstalować ten pakiet w trybie edycyjnym ze wszystkimi zależnościami:
--e .[all]

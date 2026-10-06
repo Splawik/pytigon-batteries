@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pytigon-batteries"
-version = "0.260929"
-description = "Pytigon library"
+version = "0.261004"
+description = "Runtime package set for running Pytigon as a web server"
 readme = "README.md"
 license = { text = "LGPLv2.1" }
 authors = [
@@ -31,6 +31,7 @@ dependencies = [
     "uritemplate",
     "ldap3",
     "pyopenssl",
+    "bcrypt",
 ]
 
 [project.optional-dependencies]
