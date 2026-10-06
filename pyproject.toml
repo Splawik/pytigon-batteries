@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pytigon-batteries"
-version = "0.261004"
+version = "0.261006"
 description = "Runtime package set for running Pytigon as a web server"
 readme = "README.md"
 license = { text = "LGPLv2.1" }
